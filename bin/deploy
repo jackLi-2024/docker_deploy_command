@@ -99,7 +99,7 @@ elif [ "$cmd" == "--docker-install" ];then
                 # Update yum cache
                 yum makecache fast && yum -y install docker-ce
                 # install docker-compose
-                pip install docker-compose
+                pip install docker-compose --ignore-installed requests
                 echo "-----------Install docker successfully--------------"
 	else
 		echo "ERROR：You are not root!"
