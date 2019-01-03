@@ -41,7 +41,7 @@ long_description="""
 
 setup(
     name="DockerDeploy",
-    version="19.7",
+    version="19.8",
     keywords=("docker", "deploy", "dockerdeploy", "DockerDeploy"),
     description="Docker deployment framework",
     long_description=long_description,

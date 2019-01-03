@@ -106,8 +106,9 @@ elif [ "$cmd" == "--docker-install" ];then
 	fi
 elif [ "$cmd" == "--docker-uninstall" ];then
 	if [ "$USER" == "root" ];then
-		yum remove docker*
-        	pip uninstall docker-compose
+		yum -y remove docker*
+        	# pip uninstall docker-compose
+        	rm -f /usr/local/bin/docker-compose
         	echo "-----------Uninstall docker successfully--------------"
 	else
 		echo "ERROR：You are not root!"
